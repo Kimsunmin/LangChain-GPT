@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node index"
+    "test": "jest",
+    "dev": "node -r dotenv/config index"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,13 @@
   },
   "homepage": "https://github.com/Kimsunmin/LangChain-GPT#readme",
   "dependencies": {
+    "@pinecone-database/pinecone": "^0.0.10",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "pinecone": "^0.1.0"
+    "langchain": "^0.0.45",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
   }
 }
