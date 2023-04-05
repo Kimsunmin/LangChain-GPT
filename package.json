@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "dev": "node -r dotenv/config index"
+    "dev": "node -r dotenv/config index",
+    "ingest": "node -r dotenv/config scripts/ingest-data"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/Kimsunmin/LangChain-GPT#readme",
   "dependencies": {
+    "@microsoft/fetch-event-source": "^2.0.1",
     "@pinecone-database/pinecone": "^0.0.10",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
