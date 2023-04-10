@@ -26,7 +26,10 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "langchain": "^0.0.45",
-    "pdf-parse": "^1.1.1"
+    "mysql": "^2.18.1",
+    "node-fetch": "^3.3.1",
+    "pdf-parse": "^1.1.1",
+    "typeorm": "^0.3.12"
   },
   "devDependencies": {
     "jest": "^29.5.0"

@@ -39,7 +39,7 @@ export const makeChain = (vectorstore, onTokenStream) => {
             callbackManager: onTokenStream
                 ? CallbackManager.fromHandlers({
                     async handleLLMNewToken(token) {
-                        //onTokenStream(token);
+                        onTokenStream(token);
                         console.log(token);
                     },
                 })
